@@ -17,9 +17,7 @@
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div
           class="note--panel col"
-          v-for="nota in notas.sort((a, b) =>
-            a.id < b.id ? -1 : b.id > a.id ? 1 : 0
-          )"
+          v-for="nota in notasSort"
           :key="nota.id"
         >
           <Card
@@ -141,12 +139,15 @@ export default {
   components: {
     Card,
   },
+  computed:{
+    notasSort: function(){return this.notas.sort((a, b) =>a.id < b.id ? -1 : b.id > a.id ? 1 : 0)}
+  },
   methods: {
     createCard() {
       let tempId = this.currentId;
 
       if (tempId != 0) {
-        this.notas = this.notas.filter((nota) => nota.id != tempId);
+        this.notas = this.notas//.filter((nota) => nota.id != tempId);
       } else {
         tempId = Date.now();
       }
