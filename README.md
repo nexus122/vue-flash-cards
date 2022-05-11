@@ -1,29 +1,14 @@
-# vue-flash-cards
+# Vue Flash Cards
+## Screen Shoot
+![image](https://user-images.githubusercontent.com/22988550/167913700-d549a1ab-6c40-4a99-b1bd-da4d0a37ddfb.png)
 
-This template should help get you started developing with Vue 3 in Vite.
+## ¿Que es?
+Esto es un ejercicio final de examen de Vue, donde se nos mandaba crear un CRUD.
 
-## Recommended IDE Setup
+👉 Puedes crear una tarjeta que tiene una pregunta y una respuesta.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+👉 La respuesta esta oculta y puedes verla pulsando Show Answer.
 
-## Customize configuration
+👉 Puedes Editar Los textos de la nota.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+👉 Puedes eliminar la nota.
